@@ -13,7 +13,7 @@ h3,
 h4,
 h5 {
   font-family: "Times New Roman", Times, serif;
-  background-color: hotpink;
+  background-color: lightseagreen;
 }
 
 .header {
@@ -33,4 +33,36 @@ h5 {
 .main {
   max-width: 800px;
   margin: 0 auto;
+  padding: 16px;
+}
+
+.main > * + * {
+  margin-top: 48px;
+}
+
+.main > * {
+  border-top: 2px peachpuff;
+}
+
+.main > *:first-child {
+  border-top: none;
+}
+
+.links {
+  padding: 4px 8px;
+  color: black;
+}
+
+.links:hover {
+  color: black;
+  background-color: blue;
+}
+
+.links:active {
+  color: white;
+  background-color: blueviolet;
+}
+
+.links + links {
+  margin-left: 16px;
 }
